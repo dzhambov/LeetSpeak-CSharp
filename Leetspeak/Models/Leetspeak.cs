@@ -2,9 +2,17 @@ namespace Leetspeak.Models
 {
   public class LeetspeakTranslator
   {
-    public bool Translate()
-    {
+    public string Sentence { get; }
 
+    public LeetspeakTranslator(string sentence)
+    {
+      Sentence = sentence;
+    }
+    public string Translate(string sentence)
+    {
+      // char[] array = sentence.ToCharArray();
+      // return new string(array);
+      return sentence;
     }
   }
 }
